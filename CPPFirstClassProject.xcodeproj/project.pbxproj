@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BA0B64321FA46F600032E6C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0B64221FA46F600032E6C /* main.cpp */; };
+		2BA0B64A21FA47C700032E6C /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0B64921FA47C700032E6C /* Runner.cpp */; };
+		2BA0B65021FA49AC00032E6C /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0B64E21FA49AC00032E6C /* Controller.cpp */; };
+		2BE3E338220A155700DC2C71 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BE3E336220A155700DC2C71 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,11 @@
 
 /* Begin PBXFileReference section */
 		2BA0B63F21FA46F600032E6C /* CPPFirstClassProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPFirstClassProject; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BA0B64221FA46F600032E6C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2BA0B64921FA47C700032E6C /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		2BA0B64E21FA49AC00032E6C /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
+		2BA0B64F21FA49AC00032E6C /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
+		2BE3E336220A155700DC2C71 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		2BE3E337220A155700DC2C71 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,45 @@
 		2BA0B64121FA46F600032E6C /* CPPFirstClassProject */ = {
 			isa = PBXGroup;
 			children = (
-				2BA0B64221FA46F600032E6C /* main.cpp */,
+				2BA0B64D21FA48B700032E6C /* View */,
+				2BA0B64C21FA48B200032E6C /* Model */,
+				2BA0B64B21FA48A400032E6C /* Controller */,
 			);
 			path = CPPFirstClassProject;
+			sourceTree = "<group>";
+		};
+		2BA0B64B21FA48A400032E6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2BE3E335220A153A00DC2C71 /* Tools */,
+				2BA0B64921FA47C700032E6C /* Runner.cpp */,
+				2BA0B64E21FA49AC00032E6C /* Controller.cpp */,
+				2BA0B64F21FA49AC00032E6C /* Controller.hpp */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2BA0B64C21FA48B200032E6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BA0B64D21FA48B700032E6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BE3E335220A153A00DC2C71 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2BE3E336220A155700DC2C71 /* Timer.cpp */,
+				2BE3E337220A155700DC2C71 /* Timer.hpp */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA0B64321FA46F600032E6C /* main.cpp in Sources */,
+				2BE3E338220A155700DC2C71 /* Timer.cpp in Sources */,
+				2BA0B64A21FA47C700032E6C /* Runner.cpp in Sources */,
+				2BA0B65021FA49AC00032E6C /* Controller.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
